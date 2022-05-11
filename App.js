@@ -5,9 +5,6 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 // Utilities
 import { useFetch, WpAcfOptionsUrl, WpRestUrl } from '@components/utilities/useFetch/useFetch';
 
-// Styles
-import '@styles/global/index.scss'
-
 function App() {
   // Query pages
   const { statusPage, dataPage, errorPage } = useFetch('Page', `${WpRestUrl}/pages`);
@@ -34,7 +31,7 @@ function App() {
         {(() => {
           if (errorPage === 'error') {
             return (
-              <div className='error--errorPage'>Error - PAge data</div>
+              <div className='error--errorPage'>Error - Page data</div>
               )
           } else if (errorAcf === 'error') {
             return (
