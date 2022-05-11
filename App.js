@@ -46,7 +46,7 @@ function App() {
               )
           }
         })()}
-				{(statusAcf === 'fetching' || statusPortfolio === 'fetching' || statusPage === 'fetching') && <div className="loading"></div>}
+	{(statusAcf === 'fetching' || statusPortfolio === 'fetching' || statusPage === 'fetching') && <div className="loading"></div>}
         {(statusAcf === 'fetched' && statusPortfolio === 'fetched' && statusPage === 'fetched') && (
           <>
             <GlobalHeader PortfolioData={portfolio} />
