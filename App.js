@@ -34,15 +34,15 @@ function App() {
         {(() => {
           if (errorPage === 'error') {
             return (
-              <div className='error--statusACF'>Error - PAge data</div>
+              <div className='error--errorPage'>Error - PAge data</div>
               )
           } else if (errorAcf === 'error') {
             return (
-              <div className='error--statusACF'>Error - ACF data</div>
+              <div className='error--errorAcf'>Error - ACF data</div>
               )
           } else if (errorPortfolio === 'error') {
             return (
-              <div className='error--statusACF'>Error - Portfolio data</div>
+              <div className='error--errorPortfolio'>Error - Portfolio data</div>
               )
           }
         })()}
