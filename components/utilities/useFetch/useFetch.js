@@ -3,7 +3,7 @@ import { useEffect, useRef, useReducer } from 'react';
 
 /**
  * Pretty print of JSON
- * @param {object} res 
+ * @param {object} response Object to stringify 
  * @returns 
  */
 export const fortmatResponse = (response) => {
@@ -17,7 +17,8 @@ export const WpAcfOptionsUrl = `${domain}/acf/v3/options/options`;
 
 /**
  * Reusable hook to fetch all data from URL
- * @param {string} urls URLs to fetch from. 
+ * @param {string} stateKey string used to create dynamic key for reducer.
+ * @param {string} urls url to fetch from. 
  * @returns 
  */
 export const useFetch = (stateKey, url) => {
